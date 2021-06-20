@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Ristorante Con Fusion</title>
+</head>
+
+<body>
+
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar"> <!--target the div with id Navbar below-->
+                <span class="navbar-toggler-icon"></span> <!--make an icon for thg toggler-->
+            </button>
+            <a class="navbar-brand mr-auto" href=""><img src="./img/logo.png" height="30" width="41"></a> <!--mr-auto here to adjust the position of this navbar brand-->
+            <div class="collapse navbar-collapse" id="Navbar"> <!--collapse class helps the div to be collapsed if the page is too small-->
+                <ul class="navbar-nav mr-auto"> <!-- The navbar-collapse helps the div to be identified as a navbar collapsed contents. Because the parent node of this div is the div of the nav, applying the collapse-navbar will be made able to self-collapse the toggle-able content when the screen is small-->
+                    <li class="nav-item active"><a class="nav-link" href=""><span class="fa fa-home fa-lg"></span> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
+                    <li class="nav-item"><a class="nav-link"><span class="fa fa-list fa-lg"></span> Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li> <!--use either <i> or <span>-->
+                </ul> <!--class="fa fa-home ga-lg": fa to show that we use the font-awesome class, fa-home to use th home icon, and fa-lg to use large icon-->
+                <!--In the navbar, there would be a list of items with link inside-->
+                <!--mr-auto place the content at appropriate position-->
+            </div>
+            
+        </div>
+    </nav>
+    <div class="alert alert-danger" role="alert">
+        <h4 class="alert-heading">Covid Caution</h4>
+        <p>Due to the Covid-19, we only serve pick-up pizzas. Delivery fee has been reduced by 50%! <br>
+            Check out our <a href="./menu.html" style="color: blueviolet; text-decoration: underline;">Menu</a> now!
+        </p>
+    </div>
+
+    </alert>
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col-sm-6">
+                    <h1>Ristorante con Fusion</h1>
+                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                </div>
+                <div class="col col-sm align-self-center" style="text-align:center">
+                    <img src="./img/logo.png" class="img-fluid" style="margin-right: 40px;">
+                    <a class="col-sm-4 btn btn-warning" style="margin-left: 20px;" role="button" href="#reserve" >Reserve Table</a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="container">
+        <ol class="col-12 breadcrumb">
+            <li class="breadcrumb-item active">Home</li>
+            <li class="breadcrumb-item"><a href="aboutus.html">About Us</a></li>
+        </ol>
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 order-sm-last col-md-3">
+                <h3>Our Lipsmacking Culinary Creations</h3>
+            </div>          
+            <div class="col col-sm order-sm-first col-md">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="./img/uthappizza.png" alt="uthappizza">
+                    <div class="media-body">
+                        <h2 class="mt-0">Uthappizza<span class="badge badge-danger">HOT</span><span class="badge badge-pill badge-secondary">$4.99</span></h2>
+                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row row-content align-items-center"> 
+            <div class="col-12 col-sm-4 col-md-3">
+                <h3>This Month's Promotions</h3>
+            </div>
+            <div class="col col-sm col-md">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="./img/buffet.png" alt="buffet">
+                    <div class="media-body">
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                </div>                
+            </div>
+        </div>
+
+        <div class="row row-content align-items-center">
+            <div class="col-12 order-sm-last col-sm-4 col-md-3">
+                <h3>Meet our Culinary Specialists</h3>
+            </div>
+            <div class="col col-sm order-sm-first col-md">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="./img/alberto.png" alt="alberto">
+                    <div class="media-body">
+                        <h2 class="mt-0">Alberto Somayya</h2>
+                        <h4>Executive Chef</h4>
+                        <p class="d-none d-block-sm">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-12 col-sm-8 offset-sm-2" style="margin-right: 10px; margin-top: 30px; margin-bottom: 30px;">
+            <div class="card" id="reserve">
+                <div class="card-header text-white" style="background-color: darkgoldenrod; font-weight: bold; font-size: x-large">Reserve a Table</div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="Guests" class="col-md-2 col-form-label">Number of Guests</label>
+                            <div id="Guests" class="col-md-10">
+                                <form>
+                                <input type="radio" name="no">1 &nbsp;
+                                <input type="radio" name="no">2 &nbsp;
+                                <input type="radio" name="no">3 &nbsp;
+                                <input type="radio" name="no">4 &nbsp;
+                                <input type="radio" name="no">5 &nbsp;
+                                <input type="radio" name="no">6 &nbsp;
+                                </form>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="datetime" class="col-md-2 col-form-label">Date and Time</label>
+                            <div id="datetime" class="col-md-10">
+                                <input class="col-sm-4 " type="text" placeholder="Date">
+                                <input class="col-sm-4 offset-sm-1" type="text" placeholder="Time">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-3 offset-sm-2">
+                            <button class="form-control bg-primary text-white">Reserve</button>
+                        </div>
+                    </form>
+                        
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">             
+                <div class="col-12 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="./contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+		              <i class="fa fa-map"></i>: 121, Clear Water Bay Road<br>
+		              Clear Water Bay, Kowloon<br>
+		              HONG KONG<br>
+		              <i class="fa fa-phone"></i>: +852 1234 5678<br>
+		              <i class="fa fa-fax"></i>: +852 8765 4321<br>
+		              <i class="fa fa-mail-forward"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
+		           </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:">Mail</a>
+                        <!--class="btn btn-social-icon btn-google": without this, the icon is still displyed but in a monotone which is less lively and less colorful-->
+                    </div>
+                </div>
+           </div>
+           <div class="row justify-content-center">             
+                <div class="col-auto">
+                    <p>© Copyright 2018 Ristorante Con Fusion</p>
+                </div>
+           </div>
+        </div>
+    </footer>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
