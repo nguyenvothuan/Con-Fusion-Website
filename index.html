@@ -32,10 +32,54 @@
                 </ul> <!--class="fa fa-home ga-lg": fa to show that we use the font-awesome class, fa-home to use th home icon, and fa-lg to use large icon-->
                 <!--In the navbar, there would be a list of items with link inside-->
                 <!--mr-auto place the content at appropriate position-->
+                <span class="navbar-text text-white">
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <span class="fa fa-sign-in"></span> Login
+                    </a>
+                </span>
             </div>
             
         </div>
     </nav>
+
+    <div id="loginModal" class="modal fade" role="dialog"> <!--modal fade to make this fade. Only display when clicked upon, dialog makes this be displayed on top-->
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                
+                <div class="modal-header">
+                    <h4 class="modal-title">
+                        Login
+                    </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="inputemail">Email Address</label>
+                                <input type="email" id="inputemail" class="form-control form-control-sm mr-1" placeholder="Email">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="inputpassword">Password</label>
+                                <input type="password" id="inputpassword" class="form-control-sm mr-1" placeholder="Password">
+                            </div>  
+                            <div class="form-group col-sm-3">
+                                <label class="sr-only" for="rmbcheck">Remember me</label>
+                                <input type="checkbox" id="rmbcheck" class="form-control-sm mr-1">Remember me
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-l">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div class="alert alert-danger" role="alert">
         <h4 class="alert-heading">Covid Caution</h4>
         <p>Due to the Covid-19, we only serve pick-up pizzas. Delivery fee has been reduced by 50%! <br>
@@ -53,7 +97,9 @@
                 </div>
                 <div class="col col-sm align-self-center" style="text-align:center">
                     <img src="./img/logo.png" class="img-fluid" style="margin-right: 40px;">
-                    <a class="col-sm-4 btn btn-warning" style="margin-left: 20px;" role="button" href="#reserve" >Reserve Table</a>
+                    <a class="col-sm-4 btn btn-warning" style="margin-left: 20px;" role="button" 
+                    data-toggle="tooltip" data-html="true" title="Or Call us at <br><strong>123456789</strong>"
+                    data-placement="bottom" href="#reserve" >Reserve Table</a>
                 </div>
             </div>
 
@@ -65,6 +111,49 @@
             <li class="breadcrumb-item active">Home</li>
             <li class="breadcrumb-item"><a href="aboutus.html">About Us</a></li>
         </ol>
+
+        <div class="row row-content">
+            <div class="col">
+                <div id="carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox"> <!--carousel => carousel-inner => carousel item-->
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid" src="img/uthappizza.png" alt="pizza">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Uthappizza<span class="badge badge-danger">HOT</span><span class="badge badge-pill badge-secondary">$4.99</span></h2>
+                                <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="img/buffet.png" alt="buffet">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                                <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="img/alberto.png" alt="buffet">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Alberto Somayya</h2>
+                                <h4>Executive Chef</h4>
+                                <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#mycarousel" data-slide-to="1"></li>
+                        <li data-target="#mycarousel" data-slide-to="2"></li>
+                    </ol>
+                    <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
@@ -195,6 +284,10 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){ //check if the page's DOM is ready to be implemented script, then execute this code
+            $('[data-toggle="tooltip"]').tooltip(); //so the mouse hover the element with such attribute "tooltip", the info inside becomes a tool tip
+        });
+    </script>
 </body>
-
 </html>
